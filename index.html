@@ -1,1 +1,83 @@
-<h1> Jaqueline Ramos</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Jaqueline Ramos</title>
+    <!-- Google Fonts -->
+    <!--link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Link do site devicon.dev para add fonte dos icones de linguagem -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">    
+    <!-- linha abaixo é a referencia do meu arquivo CSS -->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <main id="container"> <!-- conteudo principal do site. Tag semantica-->
+        <aside id="bio-container"> <!-- divide a minha pagina em uma faixa lateral, conteudos secundarios -->
+            <h2> Jaqueline Ramos</h2>
+            <!-- linha de baixo estou inserindo a imagem que esta na pasta img e o alt é a legenda -->
+            <img id="bio-image" src="img/MicrosoftTeams-image.png" alt="Jaqueline Ramos">
+            <!--  o <p> é para inserir um paragráfo-->
+            <p>Olá, meu nome é Jaqueline Ramos e sou Analista de Processos e Qualidade.</p>
+            <p id="welcome-text">Seja bem-vindo(a)! </p>
+            <!-- linha abaixo é para adicionar uma lista com redes sociais para contado -->
+            <ul id="social-container">
+                <!-- código da rede social que deseja. href é o link da rede social. Target é para abrir 
+                em uma nova guia quando usuario clicar. ionc-icon é para acessar o site do ionc onde contém
+                os icones que quero adiconar -->
+                <li><a href="https://www.linkedin.com/in/jaqueline-ramos-b433991a3/" target="_blank"><ion-icon name="logo-linkedin"></ionc-icon></a></li>
+            </ul>
+            <!-- código abaixo é para inserir contato de email -->
+            <div id="email-container">
+                <ion-icon name="mail-outline"></ion-icon><a href="mailto:jaaque.ramos@hotmail.com">jaaque.ramos@hotmail.com</a>
+            </div>
+        </aside>
+        <section id="about-container"><!-- sessão do meio da minha página -->
+            <h1 id="name">Jaqueline Ramos</h1>
+            <!-- ao add um paragráfo usamos o span class é para mudar a cor de palavras/frases especificas -->
+            <p id="title"><span class="highlight">Analista de Processos e Qualidade</span></p>
+            <p class="description">Sou analista de processos e qualidade, gosto de participar de projetos desde a definição de métodos e processos de trabalho, mapeando fluxo das atividades, identificando falhas e estabelecendo estratégias para a solução do problema. Busco sempre propor melhoria contínua dos processos.</p>
+            
+            <p class="description">Atuo com análise de dados, criação de relatórios, KPIs e dashboards, gerencio o processo de problemas auxiliando a equipe para identificação da causa raiz bem como implantação de planos de ações para a resolução do problema. Iniciando os estudos em desenvolvimento visando automações de processos. Apaixonada por conhecimento!</p>
+            <!-- adicionando link do github -->
+            <a href="https://github.com/jaaqueramos" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon><span>Ver Projetos</span></a>
+            <!-- adicionando skills -->
+            <h2 id="skills-section-title">Minhas Skills</h2>
+            <p class="description">Conheça as tecnologias que domino e que estou estudando:</p>
+            <!-- criar box para separar os conhecimentos -->
+            <div id="skills-container">
+                <div class="skills-box">
+                    <p class="skills-title">Tools</p>
+                    <!-- No devicon.dev em "place this in your body" vou copiar o link do icone que quero add(esta abaixo) -->
+                    <img id="tools" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>    
+                    <img id="tools" src="img/excel.png" alt="excel">
+                    <img id="tools" src="img/powerbi.webp" alt="powerbi">
+                    <img id="tools" src="img/bizagi.webp" alt="bizagi">
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Plataforma ITSM</p>
+                    <img id="tools" src="img/sn.jpg" alt="servicenow">
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Databases</p>
+                    <i class="devicon-mysql-plain-wordmark colored"></i>
+                    <i class="devicon-sqlite-plain-wordmark colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Estudando</p>
+                    <img id="study" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+                </div>
+            </div>
+        </section> 
+    </main>
+
+    <!-- as duas linhas abaixo eu tirei do site https://ionic.io/ionicons/usage. Ela obrigatoriamente
+    tem que serem colocadas antes do final do código, antes do /body. Para o ícone poder funcionar. para
+    o código do ícone, ele tem que ser adicionado onde eu quero que ele apareça, e o código vai variar 
+    de acordo com o icone que quiser. No site tem o código para copiar"-->
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" ></script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js" ></script>
+</body>
+</html>
